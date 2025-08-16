@@ -1,48 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-    <!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>言語切り替えデモ</title>
-  <style>
-    .lang-btn {
-      margin: 5px;
-      padding: 5px 10px;
-    }
-  </style>
-</head>
-<body>
-  <div>
-    <button class="lang-btn" onclick="setLanguage('ja')">日本語</button>
-    <button class="lang-btn" onclick="setLanguage('en')">English</button>
-  </div>
-  <h1 id="title"></h1>
-  <p id="desc"></p>
 
-  <script>
-    const translations = {
-      ja: {
-        title: "ようこそ！",
-        desc: "このページでは言語を切り替えることができます。"
-      },
-      en: {
-        title: "Welcome!",
-        desc: "You can switch languages on this page."
-      }
-    };
-
-    function setLanguage(lang) {
-      document.getElementById("title").textContent = translations[lang].title;
-      document.getElementById("desc").textContent = translations[lang].desc;
-      document.documentElement.lang = lang;
-    }
-
-    // 初期表示（日本語）
-    setLanguage('ja');
-  </script>
-</body>
-</html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
