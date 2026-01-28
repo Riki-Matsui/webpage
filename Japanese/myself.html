@@ -1,55 +1,113 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>自己紹介</title>
+    <title>自己紹介 | Riki Matsui</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="language-switch">
-        <a href="./../English/index.html">English</a>
+    <div class="main-wrapper">
+        <header class="site-header">
+            <div class="container header-container">
+                <div class="logo">
+                    <h1>Riki Matsui</h1>
+                    <span class="subtitle">Astronomy & Physics</span>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="./../index.html">ホーム</a></li>
+                        <li><a href="myself.html" class="active">自己紹介</a></li>
+                        <li><a href="research.html">研究概要</a></li>
+                        <li><a href="presentation.html">業績リスト</a></li>
+                    </ul>
+                </nav>
+                <div class="language-switch">
+                    <a href="./../English/index.html">EN</a>
+                </div>
+            </div>
+        </header>
+
+        <main class="container content-container">
+            <div class="hero-section" style="border-bottom: none; padding-bottom: 0;">
+                <div class="hero-text">
+                    <h2>自己紹介</h2>
+                    <p>東北大学理学研究科天文学専攻博士後期3年の松井理輝(まついりき)です。</p>
+                </div>
+                <div class="hero-image">
+                    <img src="./../photo.JPG" alt="Profile Photo" class="profile-img">
+                </div>
+            </div>
+
+            <section id="about" class="section-card">
+                <h2 class="section-title">経歴</h2>
+                <div class="news-list"> <!-- Using news-list for timeline-like structure -->
+                    <div class="news-item">
+                        <span class="date">2025/4 - 2027/3</span>
+                        <p>日本学術振興会(JSPS) 特別研究員 DC2 採択</p>
+                    </div>
+                    <div class="news-item">
+                        <span class="date">2023/4 - 2025/3</span>
+                        <p>科学技術振興機構(JST) 次世代研究者挑戦的研究支援プログラム(SPRING) 採択</p>
+                    </div>
+                    <div class="news-item">
+                        <span class="date">2022/4 - 2026/3</span>
+                        <p>宇宙創世物理学国際共同大学院(GPPU) 採択</p>
+                    </div>
+                </div>
+
+                <h2 class="section-title" style="margin-top: 2rem;">学歴</h2>
+                <div class="news-list">
+                    <div class="news-item">
+                        <span class="date">2026/3</span>
+                        <p>東北大学理学研究科 天文学専攻 博士後期 修了(見込み)</p>
+                    </div>
+                    <div class="news-item">
+                        <span class="date">2023/3</span>
+                        <p>東北大学 理学研究科 天文学専攻 博士前期(修士) 修了</p>
+                    </div>
+                    <div class="news-item">
+                        <span class="date">2021/3</span>
+                        <p>東北大学 理学部 宇宙地球物理学科 天文学コース 卒業</p>
+                    </div>
+                    <div class="news-item">
+                        <span class="date">2018/10</span>
+                        <p>東北大学 理学部 宇宙地球物理学科 天文学コース 配属</p>
+                    </div>
+                    <div class="news-item">
+                        <span class="date">2017/4</span>
+                        <p>東北大学 理学部物理系 入学</p>
+                    </div>
+                    <div class="news-item">
+                        <span class="date">2016/3</span>
+                        <p>神奈川県立湘南高校 卒業</p>
+                    </div>
+                </div>
+
+                <h2 class="section-title" style="margin-top: 2rem;">受賞</h2>
+                <div class="news-list">
+                    <div class="news-item">
+                        <span class="date">2023/3</span>
+                        <p>日本物理学会学生優秀発表賞 (宇宙線・宇宙物理学分野)</p>
+                    </div>
+                </div>
+
+                <h2 class="section-title" style="margin-top: 2rem;">連絡先</h2>
+                <p>メール: riki.matsui-at-astr.tohoku.ac.jp</p>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2024 Riki Matsui. All rights reserved.</p>
+        </footer>
     </div>
-    <header>
-        <div class="container">
-            <h1>Riki Matsui webpage</h1>
-            <ul>
-                <li><a href="./../index.html">ホーム</a></li>
-                <li><a href="myself.html">自己紹介</a></li>
-                <li><a href="research.html">研究概要</a></li>
-                <li><a href="presentation.html">業績リスト</a></li>
-            </ul>
-        </div>
-    </header>
-    <div class="container">
-        <img src="./photo.JPG" alt="ギリシャ エギナ島にて" class="image">
-        <section id="about">
-            <h2>自己紹介</h2>
-            <p>東北大学理学研究科天文学専攻博士後期3年の松井理輝(まついりき)です。</p>
-
-            <h2>経歴</h2>
-            <p>2025/4~2027/3 日本学術振興会(JSPS) 特別研究員 DC2 採択</p>
-            <p>2023/4~2025/3 科学技術振興機構(JST) 次世代研究者挑戦的研究支援プログラム(SPRING) 採択 </p>
-            <p>2022/4~2026/3 宇宙創世物理学国際共同大学院(GPPU) 採択</p>
-
-            <h2>学歴</h2>
-            <p>2026/3 東北大学理学研究科 天文学専攻 博士後期 修了(見込み)</p>
-            <p>2023/3 東北大学 理学研究科 天文学専攻 博士前期(修士) 修了</p>
-            <p>2021/3 東北大学 理学部 宇宙地球物理学科 天文学コース 卒業</p>
-            <p>2018/10 東北大学 理学部 宇宙地球物理学科 天文学コース 配属</p>
-            <p>2017/4 東北大学 理学部物理系 入学</p>
-            <p>2016/3 神奈川県立湘南高校 卒業</p>
-
-            <h2>受賞</h2>
-            <p> 2023/3 日本物理学会学生優秀発表賞 (宇宙線・宇宙物理学分野) </p>
-
-            <h2>連絡先</h2>
-            <p>メール: riki.matsui-at-astr.tohoku.ac.jp</p>
-
-        </section>
-    </div>
-    <footer>
-        <p>&copy; 2024 Riki Matsui Webpage</p>
-    </footer>
 </body>
+
 </html>

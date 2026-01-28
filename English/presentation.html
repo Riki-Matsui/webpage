@@ -1,74 +1,125 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Works | Riki Matsui</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="language-switch">
-        <a href="./../index.html">日本語</a>
-    </div>
-    <header>
-        <div class="container">
-            <h1>Riki Matsui webpage</h1>
-            <ul>
-                <li><a href="index.html"> Home</a></li>
-                <li><a href="myself.html">About me</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="presentation.html">Works</a></li>
-            </ul>
-        </div>
-    </header>
-    <div class="container">
-        <section id="conferences">
-            <h2>Publications</h2>
-            <ul>
-                <!-- 業績リスト内容をここに貼り付け -->
-                <li>Riki Matsui, Shigeo, S Kimura, Hamid Hamidani " High-energy neutrinos from late-time jets of gamma-ray bursts seeded with cocoon photons ", 2024 ApJ 974 185 <a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...974..185M/abstract" target="_blank"> ads link</a> </li>
-                <li>Riki Matsui, Shigeo, S Kimura, Kenji Toma, Kohta Murase, "High-energy neutrino emission associated with gravitational- wave signals: effects of cocoon photons and constraints on late-time emission", 2023 ApJ 950 190 <a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...950..190M/abstract" target="_blank" > ads link</a> </li>
-                <!-- 他の業績 -->
-            </ul>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./../Japanese/style.css">
+    <style>
+        .publication-list li {
+            margin-bottom: 0.8rem;
+            padding-left: 1rem;
+            border-left: 3px solid var(--secondary-color);
+        }
 
-            <h2>Talks</h2>
-            <ul>
-                <h3> International conferences</h3>
-                <ul>
-                    <li> Riki Matsui, Shigeo Kimura, Hamid Hamidani, “High-energy neutrinos from late-time jets of gamma-ray bursts seeded with cocoon photons”, GRB Forum 2024, Athens, Greece, 12 Jul 2024 (Pear-reviewed, Oral presentation)</li>
-                    <li> Riki Matsui, Shigeo Kimura, Hamid Hamidani, “High-energy neutrinos and gamma-rays from late-time jets of gamma-ray bursts seeded with cocoon photons”, AMES workshop, Atami, Japan, 5 Jul 2024 (Non Pear-reviewed, Oral presentation)</li>
-                    <li> Riki Matsui, Shigeo Kimura, Hamid Hamidani, “Neutrino emission associated with late-time emissions of gamma-ray bursts” The 1st meating of “The creation of multi-messenger Astrophysics”, Gero, Japan, 4 Dec 2023(Non Pear-reviewed, Oral presentation)</li>
-                    <li>Riki Matsui, Shigeo Kimursa, Hamid Hamidani, “Neutrino emission associated with late-time emissions of gamma-ray bursts” TeV Particle Astrophysics 2023, Napoli, Italy Sep. 2023 (Non Pear-reviewed, Oral presentation)</li>
-                    <li>Riki Matsui, Shigeo Kimura, Kenji Toma, Kohta Murase, “High-energy neutrino emission associated with gravitational-wave signals: effects of cocoon photons and constraints on late-time emission”, The 38th International Cosmic Ray Conference, Nagoya, Japan, Jul 26 – Aug 3, 2023 (Pear-reviewed, Oral presentation)</li>
-                    <li>Riki Matsui, Shigeo Kimura, Kenji Toma, Kohta Murase, “Neutrinos associated with gravitational waves: effects of cocoon photons”, NCfA Symposium, University of Nevada, Las Vegas, U.S., 22 Feb. 2023 (Non Pear-reviewed, Poster presentation)</li>
-                    <li>Riki Matsui, Shigeo Kimura, Kenji Toma, “Prediction of high-energy neutrino signals associated with gravitational waves: effects of kilonova photons” TeV Particle Astrophysics 2022, Queen’s University, Kingston, Canada 8 Aug. 2022 (Non Pear-reviewed, Oral presentation)</li>
-                    </ul>slides are <a href="https://drive.google.com/drive/folders/1AOSSB6BXiyBopaYAWLgXyWZCO3keHLuq?usp=sharing" target="_blank">here</a>  (Google Drive) </ul>
+        .publication-list {
+            margin-bottom: 2rem;
+            padding-left: 0.5rem;
+        }
+
+        .slides-link {
+            display: block;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--text-light);
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <header class="site-header">
+            <div class="container header-container">
+                <div class="logo">
+                    <h1>Riki Matsui</h1>
+                    <span class="subtitle">Astronomy & Physics</span>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="myself.html">About me</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="presentation.html" class="active">Works</a></li>
+                    </ul>
+                </nav>
+                <div class="language-switch">
+                    <a href="./../index.html">JP</a>
+                </div>
+            </div>
+        </header>
+
+        <main class="container content-container">
+            <section id="conferences" class="section-card">
+                <h2 class="section-title">Publications</h2>
+                <ul class="publication-list">
+                    <li>Riki Matsui, Shigeo, S Kimura, Hamid Hamidani " High-energy neutrinos from late-time jets of
+                        gamma-ray bursts seeded with cocoon photons ", 2024 ApJ 974 185 <a
+                            href="https://ui.adsabs.harvard.edu/abs/2024ApJ...974..185M/abstract" target="_blank"> ads
+                            link</a> </li>
+                    <li>Riki Matsui, Shigeo, S Kimura, Kenji Toma, Kohta Murase, "High-energy neutrino emission
+                        associated with gravitational- wave signals: effects of cocoon photons and constraints on
+                        late-time emission", 2023 ApJ 950 190 <a
+                            href="https://ui.adsabs.harvard.edu/abs/2023ApJ...950..190M/abstract" target="_blank"> ads
+                            link</a> </li>
                 </ul>
-            </ul>
-    
-            <ul>
-                <h3> Seminars (in English) </h3>
-                <ul>
+
+                <h2 class="section-title">Talks</h2>
+
+                <h3>International conferences</h3>
+                <ul class="publication-list">
+                    <li> Riki Matsui, Shigeo Kimura, Hamid Hamidani, “High-energy neutrinos from late-time jets of
+                        gamma-ray bursts seeded with cocoon photons”, GRB Forum 2024, Athens, Greece, 12 Jul 2024
+                        (Pear-reviewed, Oral presentation)</li>
+                    <li> Riki Matsui, Shigeo Kimura, Hamid Hamidani, “High-energy neutrinos and gamma-rays from
+                        late-time jets of gamma-ray bursts seeded with cocoon photons”, AMES workshop, Atami, Japan, 5
+                        Jul 2024 (Non Pear-reviewed, Oral presentation)</li>
+                    <li> Riki Matsui, Shigeo Kimura, Hamid Hamidani, “Neutrino emission associated with late-time
+                        emissions of gamma-ray bursts” The 1st meating of “The creation of multi-messenger
+                        Astrophysics”, Gero, Japan, 4 Dec 2023(Non Pear-reviewed, Oral presentation)</li>
+                    <li>Riki Matsui, Shigeo Kimursa, Hamid Hamidani, “Neutrino emission associated with late-time
+                        emissions of gamma-ray bursts” TeV Particle Astrophysics 2023, Napoli, Italy Sep. 2023 (Non
+                        Pear-reviewed, Oral presentation)</li>
+                    <li>Riki Matsui, Shigeo Kimura, Kenji Toma, Kohta Murase, “High-energy neutrino emission associated
+                        with gravitational-wave signals: effects of cocoon photons and constraints on late-time
+                        emission”, The 38th International Cosmic Ray Conference, Nagoya, Japan, Jul 26 – Aug 3, 2023
+                        (Pear-reviewed, Oral presentation)</li>
+                    <li>Riki Matsui, Shigeo Kimura, Kenji Toma, Kohta Murase, “Neutrinos associated with gravitational
+                        waves: effects of cocoon photons”, NCfA Symposium, University of Nevada, Las Vegas, U.S., 22
+                        Feb. 2023 (Non Pear-reviewed, Poster presentation)</li>
+                    <li>Riki Matsui, Shigeo Kimura, Kenji Toma, “Prediction of high-energy neutrino signals associated
+                        with gravitational waves: effects of kilonova photons” TeV Particle Astrophysics 2022, Queen’s
+                        University, Kingston, Canada 8 Aug. 2022 (Non Pear-reviewed, Oral presentation)</li>
+                    <li class="slides-link">slides are <a
+                            href="https://drive.google.com/drive/folders/1AOSSB6BXiyBopaYAWLgXyWZCO3keHLuq?usp=sharing"
+                            target="_blank">here</a> (Google Drive)</li>
+                </ul>
+
+                <h3>Seminars (in English)</h3>
+                <ul class="publication-list">
                     <li>SPA meeting, Computional Center for Astrophysics, New York City, 30 Jan. 2025 </li>
                     <li>GAPP seminar, Pennsylvania State University, State College, Pennsylvania 4 Mar. 2025 </li>
                     <li>THEA seminar, Columbia University, New York City 24 Jan. 2025</li>
-                    <li>YITP, University of Kyoto  Mar. 19 2024 </li>
+                    <li>YITP, University of Kyoto Mar. 19 2024 </li>
                     <li>RESCEU, University of Tokyo Jul. 19 2023 (invited)</li>
                     <li>University of Nevada, Las Vegas Feb. 20 2023 </li>
-                    </ul>slides are <a href="https://drive.google.com/drive/folders/1qbx6Gbd-MR_ozNOWVEE2f-UA9idyFeqW?usp=sharing" target="_blank">here</a> (Google Drive)</ul>
-                    </ul>
-
-                    <!-- 他の業績 -->
-            
-
-                    <!-- 他の業績 -->
+                    <li class="slides-link">slides are <a
+                            href="https://drive.google.com/drive/folders/1qbx6Gbd-MR_ozNOWVEE2f-UA9idyFeqW?usp=sharing"
+                            target="_blank">here</a> (Google Drive)</li>
                 </ul>
-            </ul>
-            <!-- 発表リスト内容をここに貼り付け -->
-        </section>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2024 Riki Matsui Webpage</p>
+        </footer>
     </div>
-    <footer>
-        <p>&copy; 2024 Riki Matsui Webpage</p>
-    </footer>
 </body>
+
 </html>

@@ -1,53 +1,102 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me Riki Matsui</title>
-    <link rel="stylesheet" href="style.css">
+    <title>About me | Riki Matsui</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./../Japanese/style.css">
 </head>
+
 <body>
-    <div class="language-switch">
-        <a href="./../index.html">日本語</a>
+    <div class="main-wrapper">
+        <header class="site-header">
+            <div class="container header-container">
+                <div class="logo">
+                    <h1>Riki Matsui</h1>
+                    <span class="subtitle">Astronomy & Physics</span>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="myself.html" class="active">About me</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="presentation.html">Works</a></li>
+                    </ul>
+                </nav>
+                <div class="language-switch">
+                    <a href="./../index.html">JP</a>
+                </div>
+            </div>
+        </header>
+
+        <main class="container content-container">
+            <div class="hero-section" style="border-bottom: none; padding-bottom: 0;">
+                <div class="hero-text">
+                    <h2>About me</h2>
+                    <p>I am Riki Matsui, a PhD student in the Astronomical Institute, Graduate School of Science, Tohoku
+                        University.</p>
+                </div>
+                <div class="hero-image">
+                    <img src="./../photo.JPG" alt="Profile Photo" class="profile-img">
+                </div>
+            </div>
+
+            <section id="about" class="section-card">
+                <h2 class="section-title">Funding</h2>
+                <div class="news-list">
+                    <div class="news-item">
+                        <span class="date">Apr. 2025 - Mar. 2027</span>
+                        <p>JSPS DC2 selected</p>
+                    </div>
+                    <div class="news-item">
+                        <span class="date">Apr. 2023 - Mar. 2025</span>
+                        <p>JST SPRING selected</p>
+                    </div>
+                    <div class="news-item">
+                        <span class="date">Apr. 2023 - Mar. 2026</span>
+                        <p>GPPU at Tohoku University selected</p>
+                    </div>
+                </div>
+
+                <h2 class="section-title" style="margin-top: 2rem;">Education</h2>
+                <div class="news-list">
+                    <div class="news-item">
+                        <span class="date">Mar. 2026</span>
+                        <p>Tohoku University, Department of Science, PhD, Astronomy (expected)</p>
+                    </div>
+                    <div class="news-item">
+                        <span class="date">Mar. 2023</span>
+                        <p>Tohoku University, Department of Science, Master, Astronomy</p>
+                    </div>
+                    <div class="news-item">
+                        <span class="date">Mar. 2021</span>
+                        <p>Tohoku University, Department of Science, Bachelor, Astronomy</p>
+                    </div>
+                </div>
+
+                <h2 class="section-title" style="margin-top: 2rem;">Prize</h2>
+                <div class="news-list">
+                    <div class="news-item">
+                        <span class="date">Mar. 2023</span>
+                        <p>JPS Student Presentation Award</p>
+                    </div>
+                </div>
+
+                <h2 class="section-title" style="margin-top: 2rem;">Contact</h2>
+                <p>Email: riki.matsui-at-astr.tohoku.ac.jp</p>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2024 Riki Matsui Webpage</p>
+        </footer>
     </div>
-    <header>
-        <div class="container">
-            <h1>Riki Matsui webpage</h1>
-            <ul>
-                <li><a href="index.html"> Home</a></li>
-                <li><a href="myself.html">About me</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="presentation.html">Works</a></li>
-            </ul>
-        </div>
-    </header>
-    <div class="container">
-        <img src="./photo.JPG" alt="ギリシャ エギナ島にて" class="image">
-   
-        <section id="about">
-            <h2>About me</h2>
-            <p>I am Riki Matsui, a PhD student in the Astronomical Institute, Graduate School of Science, Tohoku University.</p>
-
-            <h2>Fundings </h2>
-            <p>Apr. 2025- Mar. 2027 JSPS DC2 selected</p>
-            <p>Apr. 2023- Mar. 2025 JST SPRING selected </p>
-            <p>Apr. 2023- Mar. 2026 GPPU at Tohoku Univbersity selected</p>
-
-            <h2>Education  </h2>
-            <p>Mar. 2026 Tohoku Univessity, depertment of science, PhD, astronomy </p>
-            <p>Mar. 2023 Tohoku Univessity, depertment of science, Master, astronomy</p>
-            <p>Mar. 2021 Tohoku Univessity, depertment of science, Bachlor, astronomy</p>
-
-            <h2>Prize</h2>
-            <p> Mar. 2023  JPS Student Presentation Award </p>
-
-            <h2>Contact</h2>
-            <p>メール: riki.matsui-at-astr.tohoku.ac.jp</p>
-
-        </section>
-    </div>
-    <footer>
-        <p>&copy; 2024 Riki Matsui Webpage</p>
-    </footer>
 </body>
+
 </html>

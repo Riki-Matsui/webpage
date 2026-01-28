@@ -1,50 +1,85 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Riki Matsui webpage</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Riki Matsui | Astronomy & Physics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./../Japanese/style.css">
 </head>
+
 <body>
-    <div class="language-switch">
-        <a href="./../index.html">日本語</a>
-    </div>
-    <header>
-        <div class="container">
-            <h1>Riki Matsui webpage</h1>
-            <ul>
-                <li><a href="index.html"> Home</a></li>
-                <li><a href="myself.html">About me</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="presentation.html">Works</a></li>
-            </ul>
-        </div>
-    </header>
-    <div class="container">
-        <img src="./photo.JPG" alt="ギリシャ エギナ島にて" class="image">
-        <section id="about">
-            <h2>Time line</h2>
-            <p>This Website is fully updated. (Aug. 24 2025)</p>
-        </section>
+    <div class="main-wrapper">
+        <header class="site-header">
+            <div class="container header-container">
+                <div class="logo">
+                    <h1>Riki Matsui</h1>
+                    <span class="subtitle">Astronomy & Physics</span>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="myself.html">About me</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="presentation.html">Works</a></li>
+                    </ul>
+                </nav>
+                <div class="language-switch">
+                    <a href="./../index.html">JP</a>
+                </div>
+            </div>
+        </header>
 
-        </section>
-        <h3>Where I have been to for research works</h3>
-        <ul>
-            <li> Mar. 2025 Penn. State, US (seminar)</a> </li>
-            <li> Jan.- Mar. 2025 Columbia University and CCA, NY,US (research stay)</a> </li>
-            <li> Jul. 2024 Athens, Greece (GRB Forum 2024)</a> </li>
-            <li> Sep. 2023 Naples, Italy (TeVPA 2023)</a> </li>
-            <li> Feb. 2023 Las Vegas, US (NCfA Symposium 2023)</a> </li>
-            <li> Aug. 2022 Kingston, Canada (TeVPA 2022)</a> </li>
-            </ul>
-        
-        
-        </section>
+        <main class="container content-container">
+            <section class="hero-section">
+                <div class="hero-text">
+                    <h2>Welcome</h2>
+                    <p class="intro-lead">PhD Student in Astronomy, Tohoku University</p>
+                    <p>High Energy Astrophysics, Multi-messenger Astronomy</p>
+                </div>
+                <div class="hero-image">
+                    <img src="./photo.JPG" alt="Profile Photo" class="profile-img">
+                </div>
+            </section>
 
+            <section id="about" class="section-card">
+                <h2 class="section-title">Timeline</h2>
+                <div class="news-list">
+                    <div class="news-item">
+                        <span class="date">Jan. 28 2026</span>
+                        <p>updated again with Antigravity.</p>
+                    </div>
+                    <div class="news-item">
+                        <span class="date">Aug. 24 2025</span>
+                        <p>This Website is fully updated.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-card">
+                <h2 class="section-title">Research Travel Log</h2>
+                <p class="section-subtitle">Where I have been to for research works</p>
+                <ul class="travel-list">
+                    <li><span class="date">Mar. 2025</span> Penn. State, US (seminar)</li>
+                    <li><span class="date">Jan.-Mar. 2025</span> Columbia University and CCA, NY, US (research stay)
+                    </li>
+                    <li><span class="date">Jul. 2024</span> Athens, Greece (GRB Forum 2024)</li>
+                    <li><span class="date">Sep. 2023</span> Naples, Italy (TeVPA 2023)</li>
+                    <li><span class="date">Feb. 2023</span> Las Vegas, US (NCfA Symposium 2023)</li>
+                    <li><span class="date">Aug. 2022</span> Kingston, Canada (TeVPA 2022)</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Riki Matsui. All rights reserved.</p>
+        </footer>
     </div>
-    <footer>
-        <p>&copy; 2024 Riki Matsui Webpage</p>
-    </footer>
 </body>
+
 </html>
